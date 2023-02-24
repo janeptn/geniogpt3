@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Resposta da sua pergunta</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+           <img src="{{ url_for('static', filename='images/genie.png') }}" alt="Gênio GPT-3">
+        </div></p>
+        <h1>Gênio GPT-3</h1>
+        </p>
+        <p><strong>Pergunta:</strong> {{ question }}</p>
+        <p><strong>Resposta:</strong> {{ answer }}</p>
+
+         <a href="{{ url_for('index') }}" style="color: #ffff00;">Fazer uma nova pergunta</a>
+    </div>
+</body>
+
+<div class="footer">
+    <p>Esta aplicação utiliza o modelo GPT-3 da OpenAI - <a href="https://openai.com/">https://openai.com/</a></p>
+</div> 
+
+</html>
+
