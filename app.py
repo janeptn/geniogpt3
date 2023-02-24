@@ -15,7 +15,7 @@ def index():
         
         # chamar a API do GPT-3 para obter a resposta
         response = openai.Completion.create(
-            engine="text-davinci-002",
+            engine="text-davinci-003",
             prompt=f"Q: {question}\nA:",
             temperature=0.5,
             max_tokens=1024,
